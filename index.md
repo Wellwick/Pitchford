@@ -48,3 +48,8 @@ easier on themselves. This is not a guarantee, however! Some players will have
 a power that easily affords itself to countering Stranger classification 
 capes, but will find themselves really struggling to deal with a Blaster in a 
 supposedly easy session.
+
+## Resources
+
+On this website, you will find a timeline for the campaign and supplementary 
+material to help you acting out NPCs and fill in the flavour of the world.
