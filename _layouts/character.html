@@ -8,14 +8,25 @@ layout: default
   <div class="inner">
     <div class="entry-wrap">
       <div class="entry-content">
-        Cape Identity: {{ page.title }}
-        
-        Civilian Identity: {{ page.civilian }}
-        
-        Classification: {{ page.classification }}
-        
-        Alignment: {{ page.alignment }}
-        
+        <table>
+          <tr>
+            <th>Cape Identity</th>
+            <th>{{ page.title }}</th>
+          </tr>
+          <tr>
+            <th>Civilian Identity</th>
+            <th>{{ page.civilian }}</th>
+          </tr>
+          <tr>
+            <th>Classification</th>
+            <th>{{ page.classification }}</th>
+          </tr>
+          <tr>
+            <th>Alignment</th>
+            <th>{{ page.alignment }}</th>
+          </tr>
+      </table>
+
         {{ content }}
       </div>
       <aside class="entry-sidebar">
