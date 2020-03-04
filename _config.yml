@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-UK
-title: Pitchford Weaverdice Campaign
+title: WDPitchford
 email:
-description: A campaign for the Weaverdice boardgame set in America, February-July 2011
+description: A Weaverdice campaign
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
@@ -34,6 +34,8 @@ algolia:
   index_name: # YOUR_INDEX_NAME
   search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
   powered_by: # true (default), false
+
+playercount: 0
 
 # Build settings
 markdown: kramdown
