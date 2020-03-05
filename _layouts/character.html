@@ -19,6 +19,13 @@ layout: default
             <th><img class="entry-image u-photo" src="{{ site.url }}{{ site.baseurl }}/assets/images/guts.png" alt="Guts"></th>
           </tr>
           <tr>
+            {% assign stats = [page.brawn, page.athletics, page.dexterity, page.wits, page.social, page.knowledge, page.guts] %}
+            {% for stat in stats %}
+            <th>
+              {{ stat }}
+            </th>
+            {% endfor %}
+            <!--
             <th>
               {% for i in (1..5) %}
                 ○
@@ -35,6 +42,7 @@ layout: default
             <th>{{ page.social }}</th>
             <th>{{ page.knowledge }}</th>
             <th>{{ page.guts }}</th>
+            -->
           </tr>
         </table>
         <table>
