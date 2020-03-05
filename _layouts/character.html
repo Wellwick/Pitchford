@@ -10,6 +10,34 @@ layout: default
       <div class="entry-content">
         <table>
           <tr>
+            <th><img class="entry-image u-photo" src="/assets/images/brawn.png" alt="Brawn"></th>
+            <th><img class="entry-image u-photo" src="/assets/images/athletics.png.png" alt="Athletics"></th>
+            <th><img class="entry-image u-photo" src="/assets/images/dexterity.png" alt="Dexterity"></th>
+            <th><img class="entry-image u-photo" src="/assets/images/wits.png" alt="Wits"></th>
+            <th><img class="entry-image u-photo" src="/assets/images/social.png" alt="Social"></th>
+            <th><img class="entry-image u-photo" src="/assets/images/know.png" alt="Knowledge"></th>
+            <th><img class="entry-image u-photo" src="/assets/images/guts.png" alt="Guts"></th>
+          </tr>
+          <tr>
+            <th>
+              {% for i in 1..5 %}
+                {% if i > page.brawn %}
+                  ○
+                {% else %}
+                  ●
+                {% endif %}
+              {% endfor %}
+            </th>
+            <th>{{ page.athletics }}</th>
+            <th>{{ page.dexterity }}</th>
+            <th>{{ page.wits }}</th>
+            <th>{{ page.social }}</th>
+            <th>{{ page.knowledge }}</th>
+            <th>{{ page.guts }}</th>
+          </tr>
+        </table>
+        <table>
+          <tr>
             <th>Cape Identity</th>
             <th>{{ page.title }}</th>
           </tr>
