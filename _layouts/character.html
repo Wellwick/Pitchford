@@ -8,7 +8,7 @@ layout: default
   <div class="inner">
     <div class="entry-wrap">
       <div class="entry-content">
-        <table>
+        <table style='text-align:center'>
           <tr>
             <th><img class="entry-image u-photo" src="{{ site.url }}{{ site.baseurl }}/assets/images/brawn.png" alt="Brawn"></th>
             <th><img class="entry-image u-photo" src="{{ site.url }}{{ site.baseurl }}/assets/images/athletics.png" alt="Athletics"></th>
@@ -19,30 +19,13 @@ layout: default
             <th><img class="entry-image u-photo" src="{{ site.url }}{{ site.baseurl }}/assets/images/guts.png" alt="Guts"></th>
           </tr>
           <tr>
-            {% assign stats = [page.brawn, page.athletics, page.dexterity, page.wits, page.social, page.knowledge, page.guts] %}
-            {% for stat in stats %}
-            <th>
-              {{ stat }}
-            </th>
-            {% endfor %}
-            <!--
-            <th>
-              {% for i in (1..5) %}
-                ○
-                {% if i > page.brawn %}
-                  ○
-                {% else %}
-                  ●
-                {% endif %}
-              {% endfor %}
-            </th>
+            <th>{{ page.brawn }}</th>
             <th>{{ page.athletics }}</th>
             <th>{{ page.dexterity }}</th>
             <th>{{ page.wits }}</th>
             <th>{{ page.social }}</th>
             <th>{{ page.knowledge }}</th>
             <th>{{ page.guts }}</th>
-            -->
           </tr>
         </table>
         <table>
