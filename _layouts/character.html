@@ -11,7 +11,7 @@ layout: default
         <table>
           <tr>
             <th><img class="entry-image u-photo" src="{{ site.url }}{{ site.baseurl }}/assets/images/brawn.png" alt="Brawn"></th>
-            <th><img class="entry-image u-photo" src="{{ site.url }}{{ site.baseurl }}/assets/images/athletics.png.png" alt="Athletics"></th>
+            <th><img class="entry-image u-photo" src="{{ site.url }}{{ site.baseurl }}/assets/images/athletics.png" alt="Athletics"></th>
             <th><img class="entry-image u-photo" src="{{ site.url }}{{ site.baseurl }}/assets/images/dexterity.png" alt="Dexterity"></th>
             <th><img class="entry-image u-photo" src="{{ site.url }}{{ site.baseurl }}/assets/images/wits.png" alt="Wits"></th>
             <th><img class="entry-image u-photo" src="{{ site.url }}{{ site.baseurl }}/assets/images/social.png" alt="Social"></th>
@@ -21,6 +21,7 @@ layout: default
           <tr>
             <th>
               {% for i in 1..5 %}
+                ○
                 {% if i > page.brawn %}
                   ○
                 {% else %}
